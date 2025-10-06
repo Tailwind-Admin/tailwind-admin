@@ -53,7 +53,7 @@
             <a href="index.html">
               <b class="logo-icon">
                 <!-- Dark Logo icon -->
-                <img src="../../styles/dist/images/tailwind-admin/dark-logo.svg" alt="homepage" class="dark-logo" />
+                <img src="../../styles/dist/images/tailwind-admin/dark-logo.svg" alt="brand-logo" class="dark-logo" />
               </b>
               <!--End Logo icon -->
             </a>
@@ -172,7 +172,7 @@
               <a href="index.html">
                 <b class="logo-icon">
                   <!-- Dark Logo icon -->
-                  <img src="../../styles/dist/images/tailwind-admin/dark-logo.svg" alt="homepage" class="dark-logo" />
+                  <img src="../../styles/dist/images/tailwind-admin/dark-logo.svg" alt="brand-logo" class="dark-logo" />
                 </b>
                 <!--End Logo icon -->
               </a>
@@ -300,7 +300,7 @@
           <a href="index.html">
             <b class="logo-icon d-lg-none d-block">
               <!-- Dark Logo icon -->
-              <img src="../../styles/dist/images/tailwind-admin/dark-logo.svg" alt="homepage" class="dark-logo" />
+              <img src="../../styles/dist/images/tailwind-admin/dark-logo.svg" alt="brand-logo" class="dark-logo" />
             </b>
             <!--End Logo icon -->
           </a>
@@ -328,39 +328,43 @@
               that follow below steps.</h6>
           </div>
           <br>
-          <h5 class="mt-1 fw-bold">Select the NextAuth Demo folder</h5>
-          <pre><code class="language-js py-0 hljs javascript"><span class="hljs-comment">//packages/typescript/NextAuth </span>
-npm install</code>
-</pre>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="mt-1 fw-bold">Select the NextAuth Demo folder</h5>
+              <pre><code class="language-js py-0 hljs javascript"><span class="hljs-comment">//packages/typescript/NextAuth </span>
+    npm install</code>
+    </pre>
 
-          <br>
-          <h4 class="card-title">Global App Setup with Authentication, Theme, and RTL</h4>
-          <pre>                    <code class="hljs javascript">
-<span class="hljs-comment">// -----------------------------------------------------------------------------------------</span>
-<span class="hljs-comment">// File : packages/typescript/NextAuth/src/app/app.tsx</span>
-<span class="hljs-comment">// -----------------------------------------------------------------------------------------</span>
-            
-<span class="hljs-keyword">import</span> { AuthProvider } <span class="hljs-keyword">from</span> <span class="hljs-string">'src/app/context/AuthContext'</span>; <span class="hljs-comment"></span>
-            
-            
-<span class="hljs-keyword">const</span> MyApp = ({ children }) =>  {
-  return (
-    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">SessionProvider <span class="hljs-attr">session</span>=<span class="hljs-string">{session}</span></span>&gt;</span>
-     <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">AuthProvider</span>&gt; //... Setting up Auth Context Provider for NextAuth, Firebase, and Supabase</span>
-       <span class="hljs-tag">&lt;<span class="hljs-name">AppRouterCacheProvider</span> <span class="hljs-attr">options</span>=<span class="hljs-string">{</span>{<span class="hljs-attr">enableCssLayer:true</span> }</span>}&gt;
-         <span class="hljs-tag">&lt;<span class="hljs-name">ThemeProvider</span> <span class="hljs-attr">theme</span>=<span class="hljs-string">{theme}</span>&gt;</span>
-           <span class="hljs-tag">&lt;<span class="hljs-name">RTL</span> <span class="hljs-attr">direction</span>=<span class="hljs-string">{activeDir}</span>&gt;</span>
-             <span class="hljs-tag">{<span class="hljs-name">children</span>}</span>
-          <span class="hljs-tag">&lt;/<span class="hljs-name">RTL</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">ThemeProvider</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-name">AppRouterCacheProvider</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">AuthProvider</span>&gt;</span></span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">SessionProvider</span>&gt;</span></span>
-
-  )
-};
-                                </code>
-                              </pre>
+              <br>
+              <h4 class="card-title">Global App Setup with Authentication, Theme, and RTL</h4>
+              <pre>                    <code class="hljs javascript">
+    <span class="hljs-comment">// -----------------------------------------------------------------------------------------</span>
+    <span class="hljs-comment">// File : packages/typescript/NextAuth/src/app/app.tsx</span>
+    <span class="hljs-comment">// -----------------------------------------------------------------------------------------</span>
+                
+    <span class="hljs-keyword">import</span> { AuthProvider } <span class="hljs-keyword">from</span> <span class="hljs-string">'src/app/context/AuthContext'</span>; <span class="hljs-comment"></span>
+                
+                
+    <span class="hljs-keyword">const</span> MyApp = ({ children }) =>  {
+      return (
+        <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">SessionProvider <span class="hljs-attr">session</span>=<span class="hljs-string">{session}</span></span>&gt;</span>
+         <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">AuthProvider</span>&gt; //... Setting up Auth Context Provider for NextAuth, Firebase, and Supabase</span>
+           <span class="hljs-tag">&lt;<span class="hljs-name">AppRouterCacheProvider</span> <span class="hljs-attr">options</span>=<span class="hljs-string">{</span>{<span class="hljs-attr">enableCssLayer:true</span> }</span>}&gt;
+             <span class="hljs-tag">&lt;<span class="hljs-name">ThemeProvider</span> <span class="hljs-attr">theme</span>=<span class="hljs-string">{theme}</span>&gt;</span>
+               <span class="hljs-tag">&lt;<span class="hljs-name">RTL</span> <span class="hljs-attr">direction</span>=<span class="hljs-string">{activeDir}</span>&gt;</span>
+                 <span class="hljs-tag">{<span class="hljs-name">children</span>}</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">RTL</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">ThemeProvider</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">AppRouterCacheProvider</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">AuthProvider</span>&gt;</span></span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">SessionProvider</span>&gt;</span></span>
+    
+      )
+    };
+                                    </code>
+                                  </pre>
+            </div>
+          </div>
           <div class="mt-4 card">
             <div class="card-body">
               <h4 class="card-title">1. NextAuth</h4>

@@ -53,7 +53,7 @@
             <a href="index.html">
               <b class="logo-icon">
                 <!-- Dark Logo icon -->
-                <img src="../../styles/dist/images/tailwind-admin/dark-logo.svg" alt="homepage" class="dark-logo" />
+                <img src="../../styles/dist/images/tailwind-admin/dark-logo.svg" alt="brand-logo" class="dark-logo" />
               </b>
               <!--End Logo icon -->
             </a>
@@ -172,7 +172,7 @@
               <a href="index.html">
                 <b class="logo-icon">
                   <!-- Dark Logo icon -->
-                  <img src="../../styles/dist/images/tailwind-admin/dark-logo.svg" alt="homepage" class="dark-logo" />
+                  <img src="../../styles/dist/images/tailwind-admin/dark-logo.svg" alt="brand-logo" class="dark-logo" />
                 </b>
                 <!--End Logo icon -->
               </a>
@@ -300,7 +300,7 @@
           <a href="index.html">
             <b class="logo-icon d-lg-none d-block">
               <!-- Dark Logo icon -->
-              <img src="../../styles/dist/images/tailwind-admin/dark-logo.svg" alt="homepage" class="dark-logo" />
+              <img src="../../styles/dist/images/tailwind-admin/dark-logo.svg" alt="brand-logo" class="dark-logo" />
             </b>
             <!--End Logo icon -->
           </a>
@@ -344,10 +344,10 @@
           <div class="tab-content">
             <div class="tab-pane " id="profile" role="tabpanel">
               <div class="p-3 border border-top-0 rounded-bottom">
-                <div class="p-3">
-                  <div class="mt-4 card">
+                <div class="p-3 d-flex flex-column gap-2">
+                  <div class="card">
                     <div class="card-body">
-                      <h4 class="card-title">1. Override Colors</h4>
+                      <h4 class="card-title">Override Colors (Light Theme)</h4>
                       <h5 class="card-subtitle mt-2 text-muted mb-4">
                         For any change in colors :
                         <span class="text-dark font-medium">/src/app/css/theme/default-colors.css</span>
@@ -429,6 +429,63 @@
       var(--color-secondary) 12%,
       transparent);
 }
+                                  </code>
+                              </pre>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-body">
+                      <h4 class="card-title">Override Colors (Dark Theme)</h4>
+                      <h5 class="card-subtitle mt-2 text-muted mb-4">
+                        For any change in colors :
+                        <span class="text-dark font-medium">/src/app/css/theme/dark-colors.css</span>
+                      </h5>
+                      <pre>                            <code class="language-js py-0 hljs javascript">
+.dark:root {
+    --background: #1C2536;
+    --foreground: var(--color-white);
+    --card: var(--color-dark);
+    --card-foreground: var(--color-white);
+    --popover: var(--color-dark);
+    --popover-foreground: var(--color-white);
+    --primary: var(--color-primary);
+    --primary-foreground: var(--color-white);
+    --secondary: var(--color-secondary);
+    --secondary-foreground: var(--color-white);
+    --muted: var(--color-muted);
+    --muted-foreground: var(--color-muted-foreground);
+    --accent: var(--color-lightprimary);
+    --accent-foreground: var(--color-primary);
+    --destructive: var(--color-error);
+    --border: var(--color-darkborder);
+    --input: var(--color-darkborder);
+    --ring: var(--color-lightprimary);
+    --chart-1: var(--color-primary);
+    --chart-2: var(--color-secondary);
+    --chart-3: var(--color-success);
+    --chart-4: var(--color-warning);
+    --chart-5: var(--color-error);
+    --sidebar: var(--color-sidebar);
+    --sidebar-foreground: var(--color-sidebar-foreground);
+    --sidebar-primary: var(--color-sidebar-primary);
+    --sidebar-primary-foreground: var(--color-sidebar-primary-foreground);
+    --sidebar-accent: var(--color-sidebar-accent);
+    --sidebar-accent-foreground: var(--color-sidebar-accent-foreground);
+    --sidebar-border: var(--color-sidebar-border);
+    --sidebar-ring: var(--color-sidebar-ring);
+}
+                                  </code>
+                              </pre>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-body">
+                      <h4 class="card-title">Override Theme Colors</h4>
+                      <h5 class="card-subtitle mt-2 text-muted mb-4">
+                        For any change in colors :
+                        <span class="text-dark font-medium">/src/app/css/theme/default-colors.css</span>
+                      </h5>
+                      <pre>                            <code class="language-js py-0 hljs javascript">
 
 [data-color-theme="BLUE_THEME"] {
   --color-primary: #5d87ff;
@@ -468,10 +525,10 @@
             </div>
             <div class="tab-pane active" id="home" role="tabpanel">
               <div class="p-3 border border-top-0 rounded-bottom">
-                <div class="p-3">
+                <div class="p-3 d-flex flex-column gap-2">
                   <div class="card">
                     <div class="card-body">
-                      <h4 class="card-title">Override Colors (Light / Dark Theme)</h4>
+                      <h4 class="card-title">Override Colors (Light Theme)</h4>
                       <h5 class="card-subtitle mt-2 text-muted mb-4">
                         For any change in colors :
                         <span class="text-dark font-medium"> /src/app/css/theme/default-colors.css</span>
@@ -517,13 +574,99 @@
     --color-defaultBorder: #dfe5ef;
     --color-slateGray: #5a6a85bf;
     --color-breadcrumbColor: #49BEFF20;
+
+    --background: #ffff;
+    --foreground: var(--color-link);
+    --card: var(--color-white);
+    --card-foreground: var(--color-link);
+    --popover: var(--color-white);
+    --popover-foreground: var(--color-link);
+    --primary: var(--color-primary);
+    --primary-foreground: var(--color-white);
+    --secondary: var(--color-secondary);
+    --secondary-foreground: var(--color-white);
+    --muted: #f5f5f5;
+    --muted-foreground: #737373;
+    --accent: var(--color-lightprimary);
+    --accent-foreground: var(--color-primary);
+    --destructive: var(--color-error);
+    --destructive-foreground: var(--color-white);
+    --border: #e5e5e5;
+    --input: var(--color-input);
+    --ring: var(--color-lightprimary);
+    --chart-1: var(--color-primary);
+    --chart-2: var(--color-secondary);
+    --chart-3: var(--color-success);
+    --chart-4: var(--color-warning);
+    --chart-5: var(--color-error);
+    --sidebar: var(--color-white);
+    --sidebar-foreground: var(--color-link);
+    --sidebar-primary: var(--color-primary);
+    --sidebar-primary-foreground: var(--color-white);
+    --sidebar-accent: var(--color-lightprimary);
+    --sidebar-accent-foreground: var(--color-primary);
+    --sidebar-border: #e5e5e5;
+    --sidebar-ring: #a1a1a1;
 }
                                     </code>
                                 </pre>
                     </div>
                   </div>
+                  <div class="card">
+                    <div class="card-body">
+                      <h4 class="card-title">Override Colors (Dark Theme)</h4>
+                      <h5 class="card-subtitle mt-2 text-muted mb-4">
+                        For any change in colors :
+                        <span class="text-dark font-medium"> /src/app/css/theme/dark-colors.css</span>
+                      </h5>
+                      <pre>
+                            <code class="language-js py-0">
 
+.dark {
+    --background: var(--color-dark);
+    --foreground: var(--color-white);
+    --card: var(--color-dark);
+    --card-foreground: var(--color-white);
+    --popover: var(--color-dark);
+    --popover-foreground: var(--color-white);
+    --primary: var(--color-primary);
+    --primary-foreground: var(--color-white);
+    --secondary: var(--color-secondary);
+    --secondary-foreground: var(--color-white);
+    --muted: var(--color-muted);
+    --muted-foreground: var(--color-muted-foreground);
+    --accent: var(--color-accent);
+    --accent-foreground: var(--color-accent-foreground);
+    --destructive: var(--color-error);
+    --border: var(--color-input);
+    --input: var(--color-darkborder);
+    --ring: var(--color-lightprimary);
+    --chart-1: var(--color-primary);
+    --chart-2: var(--color-secondary);
+    --chart-3: var(--color-success);
+    --chart-4: var(--color-warning);
+    --chart-5: var(--color-error);
+    --sidebar: var(--color-sidebar);
+    --sidebar-foreground: var(--color-sidebar-foreground);
+    --sidebar-primary: var(--color-sidebar-primary);
+    --sidebar-primary-foreground: var(--color-sidebar-primary-foreground);
+    --sidebar-accent: var(--color-sidebar-accent);
+    --sidebar-accent-foreground: var(--color-sidebar-accent-foreground);
+    --sidebar-border: var(--color-sidebar-border);
+    --sidebar-ring: var(--color-sidebar-ring);
+     --color-lightprimary: #5D87FF20;
 
+    /* common var for dark&light */
+    --color-charcoal: #7c8fac;
+    --color-customdark: #ffff;
+    --color-defaultBorder: #333f55;
+    --color-slateGray: #7c8fac;
+    --color-breadcrumbColor: #223662;
+}
+                                    </code>
+                                </pre>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
