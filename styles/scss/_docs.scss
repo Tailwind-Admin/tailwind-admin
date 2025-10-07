@@ -4,14 +4,14 @@
   left: 0;
   width: 100%;
   z-index: 12;
-  background: linear-gradient(90deg, #0F0533 0%, #1B0A5C 100%);
+  background: linear-gradient(90deg, #0f0533 0%, #1b0a5c 100%);
 
   @include media-breakpoint-down(lg) {
     top: 70px;
   }
 
   .text-linear-gradient {
-    background: linear-gradient(90deg, #FFFFFF 0%, #8D70F8 100%);
+    background: linear-gradient(90deg, #ffffff 0%, #8d70f8 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -23,36 +23,35 @@
   }
 
   .live-preview-drop {
-
     &:hover,
     &:active {
-      background-color: #8D70F8;
+      background-color: #8d70f8;
     }
 
     &.show {
-      background-color: #8D70F8;
+      background-color: #8d70f8;
     }
   }
 
   .get-pro-btn {
-    background-color: #8D70F8;
+    background-color: #8d70f8;
 
     &:hover {
-      background-color: #714BFF;
+      background-color: #714bff;
     }
   }
 
   .all-access-pass-btn {
-    background-color: #B3F143;
+    background-color: #b3f143;
 
     &:hover {
-      background-color: #90DE03;
+      background-color: #90de03;
     }
   }
 
   .link-hover {
     &:hover {
-      color: #714BFF !important;
+      color: #714bff !important;
     }
   }
 
@@ -62,7 +61,7 @@
 
     .dropdown-item {
       font-size: 16px;
-      color: #000C29;
+      color: #000c29;
       padding: 12px 18px;
 
       &:hover {
@@ -71,7 +70,6 @@
     }
   }
 }
-
 
 .docs {
   &#main-wrapper {
@@ -112,7 +110,7 @@
         .has-arrow {
           &::after {
             position: absolute;
-            content: "";
+            content: '';
             width: 8px;
             height: 8px;
             border-width: 2px 0 0 2px;
@@ -214,14 +212,11 @@
     }
   }
 
-
-
   .card {
     border: 1px solid $border-color;
     border-radius: 20px;
     margin-bottom: 20px;
   }
-
 
   pre {
     display: grid;
@@ -231,6 +226,12 @@
       border-radius: $border-radius-md;
     }
   }
+}
+
+.container-home {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 15px;
 }
 
 @include media-breakpoint-down(lg) {

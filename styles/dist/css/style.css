@@ -32,7 +32,7 @@ html .dropdown-menu {
   --bs-dropdown-border-width: 0;
 }
 html .nav-pills {
-  --bs-nav-pills-link-active-bg: #11142d;
+  --bs-nav-pills-link-active-bg: var(color-primary);
 }
 
 /*!
@@ -15440,7 +15440,7 @@ textarea.form-control-lg {
   left: 0;
   width: 100%;
   z-index: 12;
-  background: linear-gradient(90deg, #0F0533 0%, #1B0A5C 100%);
+  background: linear-gradient(90deg, #0f0533 0%, #1b0a5c 100%);
 }
 @media (max-width: 991.98px) {
   .app-topstrip {
@@ -15448,7 +15448,7 @@ textarea.form-control-lg {
   }
 }
 .app-topstrip .text-linear-gradient {
-  background: linear-gradient(90deg, #FFFFFF 0%, #8D70F8 100%);
+  background: linear-gradient(90deg, #ffffff 0%, #8d70f8 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -15458,25 +15458,25 @@ textarea.form-control-lg {
   --bs-border-opacity: 0.4;
 }
 .app-topstrip .live-preview-drop:hover, .app-topstrip .live-preview-drop:active {
-  background-color: #8D70F8;
+  background-color: #8d70f8;
 }
 .app-topstrip .live-preview-drop.show {
-  background-color: #8D70F8;
+  background-color: #8d70f8;
 }
 .app-topstrip .get-pro-btn {
-  background-color: #8D70F8;
+  background-color: #8d70f8;
 }
 .app-topstrip .get-pro-btn:hover {
-  background-color: #714BFF;
+  background-color: #714bff;
 }
 .app-topstrip .all-access-pass-btn {
-  background-color: #B3F143;
+  background-color: #b3f143;
 }
 .app-topstrip .all-access-pass-btn:hover {
-  background-color: #90DE03;
+  background-color: #90de03;
 }
 .app-topstrip .link-hover:hover {
-  color: #714BFF !important;
+  color: #714bff !important;
 }
 .app-topstrip .dropdown-menu {
   min-width: 280px;
@@ -15484,7 +15484,7 @@ textarea.form-control-lg {
 }
 .app-topstrip .dropdown-menu .dropdown-item {
   font-size: 16px;
-  color: #000C29;
+  color: #000c29;
   padding: 12px 18px;
 }
 .app-topstrip .dropdown-menu .dropdown-item:hover {
@@ -15611,6 +15611,12 @@ textarea.form-control-lg {
 }
 .docs pre code.hljs {
   border-radius: 10px;
+}
+
+.container-home {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 15px;
 }
 
 @media (max-width: 991.98px) {
