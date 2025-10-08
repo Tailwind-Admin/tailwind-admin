@@ -15619,14 +15619,6 @@ textarea.form-control-lg {
   padding: 15px;
 }
 
-.home-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 100vw;
-}
-
 @media (max-width: 991.98px) {
   .docs .left-sidebar {
     left: 0px;
@@ -15638,4 +15630,9 @@ textarea.form-control-lg {
 }
 a {
   text-decoration: none;
+}
+
+.hover-scale-120:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
 }

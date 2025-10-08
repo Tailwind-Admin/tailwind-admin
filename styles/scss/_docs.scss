@@ -234,14 +234,6 @@
   padding: 15px;
 }
 
-.home-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 100vw;
-}
-
 @include media-breakpoint-down(lg) {
   .docs {
     .left-sidebar {
@@ -257,4 +249,10 @@
 
 a {
   text-decoration: none;
+}
+
+// hover effect
+.hover-scale-120:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
 }
