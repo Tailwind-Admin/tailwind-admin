@@ -30,36 +30,37 @@
 </head>
 
 <body>
-    <div class="docs">
-        <div class="pt-0 d-block" data-bs-spy="scroll" data-bs-smooth-scroll="true">
-            <!-- ============================================================== -->
-            <!-- Container home  -->
-            <!-- ============================================================== -->
-            <div class="container-home">
-                <div class="mt-5">
-                    <!-- ============================================================== -->
-                    <!-- Start Page Content -->
-                    <!-- ============================================================== -->
-                    <div class="mt-4 d-flex justify-content-center align-items-center">
-                        <!-- Logo icon -->
-                        <a href="index.html">
-                            <b class="logo-icon">
-                                <!-- Dark Logo icon -->
-                                <img src="./styles/dist/images/tailwind-admin/dark-logo.svg" alt="logo"
-                                    class="dark-logo" />
-                            </b>
-                            <!--End Logo icon -->
-                        </a>
-                    </div>
-                    <div class="text-center mt-3">
-                        <p>Explore the documentation to learn more about the features available in both <br> the Free and Pro versions.</p>
-                    </div>
-                    <!-- ============================================================== -->
-                    <!-- tabs for toggle documentation of free / premium -->
-                    <!-- ============================================================== -->
-                    <div class="mt-4">
-                        <!-- tab button / toggle -->
-                        <ul class="nav nav-pills d-flex justify-content-center gap-2" role="tablist">
+    <div class="home-wrapper docs">
+        <!-- ============================================================== -->
+        <!-- Container home  -->
+        <!-- ============================================================== -->
+        <div class="container-home" data-bs-spy="scroll" data-bs-smooth-scroll="true">
+            <div class="d-flex flex-column gap-2">
+                <!-- ============================================================== -->
+                <!-- Start Page Content -->
+                <!-- ============================================================== -->
+                <div class="d-flex justify-content-center align-items-center">
+                    <!-- Logo icon -->
+                    <a href="index.html">
+                        <b class="logo-icon">
+                            <!-- Dark Logo icon -->
+                            <img src="./styles/dist/images/tailwind-admin/dark-logo.svg" alt="logo" class="dark-logo" />
+                        </b>
+                        <!--End Logo icon -->
+                    </a>
+                </div>
+                <div class="text-center">
+                    <p>Explore the documentation to learn more about the features available in both <br> the Free
+                        and Pro versions.</p>
+                </div>
+                <!-- ============================================================== -->
+                <!-- tabs for toggle documentation of free / premium -->
+                <!-- ============================================================== -->
+                <div class="d-flex flex-column gap-4">
+                    <!-- tab button / toggle -->
+                    <div class="d-flex justify-content-center">
+                        <ul class="nav nav-pills d-inline-flex justify-content-center gap-2 mx-auto border rounded-pill p-1 shadow-sm"
+                            role="tablist">
                             <li class="nav-item">
                                 <a class="nav-link rounded-pill active" data-bs-toggle="tab" href="#free" role="tab">
                                     <span>Free Version</span>
@@ -71,113 +72,113 @@
                                 </a>
                             </li>
                         </ul>
-                        <!-- tab content -->
-                        <div class="tab-content">
-                            <!-- free docs tab items -->
-                            <div class="tab-pane active" id="free" role="tabpanel">
-                                <div class="row pt-4 d-flex justify-content-center">
-                                    <div class="col-md-4">
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <span class="border rounded-3 p-3 text-white d-inline-block">
-                                                    <img src="./styles/dist/images/next-cat-icon.svg" alt="nextjs">
-                                                </span>
-                                                <h4 class="card-title mt-4 fs-5">NextJs Documentation</h4>
-                                                <p class="card-subtitle lh-base text-muted fs-3 mt-2 mb-3">
-                                                    Simple Next.js dashboard using Tailwind & ShadCN. Great for quick
-                                                    starts.
-                                                </p>
-                                                <a href="https://tailwind-admin.github.io/Tailwind-admin/free-documentation/nextjs/index.html"
-                                                    target="_blank"
-                                                    class="stretched-link fw-medium fs-3 d-flex align-items-center gap-1">Show
-                                                    Docs
-                                                    <i class="ti ti-chevron-right fs-3"></i>
-                                                </a>
-                                            </div>
+                    </div>
+                    <!-- tab content -->
+                    <div class="tab-content">
+                        <!-- free docs tab items -->
+                        <div class="tab-pane active" id="free" role="tabpanel">
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <span class="border rounded-3 p-3 text-white d-inline-block">
+                                                <img src="./styles/dist/images/next-cat-icon.svg" alt="nextjs">
+                                            </span>
+                                            <h4 class="card-title mt-4 fs-5">NextJs Documentation</h4>
+                                            <p class="card-subtitle lh-base text-muted fs-3 mt-2 mb-3">
+                                                Simple Next.js dashboard using Tailwind & ShadCN. Great for quick
+                                                starts.
+                                            </p>
+                                            <a href="https://tailwind-admin.github.io/Tailwind-admin/free-documentation/nextjs/index.html"
+                                                target="_blank"
+                                                class="stretched-link fw-medium fs-3 d-flex align-items-center gap-1">Show
+                                                Docs
+                                                <i class="ti ti-chevron-right fs-3"></i>
+                                            </a>
                                         </div>
                                     </div>
-                                    <div class="col-md-4">
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <span class="border rounded-3 p-3 text-white d-inline-block">
-                                                    <img src="./styles/dist/images/react-cat-icon.svg" alt="react">
-                                                </span>
-                                                <h4 class="card-title mt-4 fs-5">React Documentation</h4>
-                                                <p class="card-subtitle lh-base text-muted fs-3 mt-2 mb-3">
-                                                    Simple React Starter dashboard with Tailwind & ShadCN UI. Great for
-                                                    quick
-                                                    starts.
-                                                </p>
-                                                <a href="https://tailwind-admin.github.io/Tailwind-admin/free-documentation/react/index.html"
-                                                    target="_blank"
-                                                    class="stretched-link fw-medium fs-3 d-flex align-items-center gap-1 text-primary">Show
-                                                    Docs
-                                                    <i class="ti ti-chevron-right fs-3"></i>
-                                                </a>
-                                            </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <span class="border rounded-3 p-3 text-white d-inline-block">
+                                                <img src="./styles/dist/images/react-cat-icon.svg" alt="react">
+                                            </span>
+                                            <h4 class="card-title mt-4 fs-5">React Documentation</h4>
+                                            <p class="card-subtitle lh-base text-muted fs-3 mt-2 mb-3">
+                                                Simple React Starter dashboard with Tailwind & ShadCN UI. Great for
+                                                quick
+                                                starts.
+                                            </p>
+                                            <a href="https://tailwind-admin.github.io/Tailwind-admin/free-documentation/react/index.html"
+                                                target="_blank"
+                                                class="stretched-link fw-medium fs-3 d-flex align-items-center gap-1 text-primary">Show
+                                                Docs
+                                                <i class="ti ti-chevron-right fs-3"></i>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <!-- premium docs tab items -->
-                            <div class="tab-pane" id="premium" role="tabpanel">
-                                <div class="row pt-4 d-flex justify-content-center">
-                                    <div class="col-md-4">
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <span class="border rounded-3 p-3 text-white d-inline-block">
-                                                    <img src="./styles/dist/images/next-cat-icon.svg" alt="nextjs">
-                                                </span>
-                                                <h4 class="card-title mt-4 fs-5">NextJs Documentation</h4>
-                                                <p class="card-subtitle lh-base text-muted fs-3 mt-2 mb-3">
-                                                    Full-featured Next.js admin with Tailwind & ShadCN. Pro components &
-                                                    support.
-                                                </p>
-                                                <a href="https://tailwind-admin.github.io/Tailwind-admin/premium-documentation/nextjs/index.html"
-                                                    target="_blank"
-                                                    class="stretched-link fw-medium fs-3 d-flex align-items-center gap-1">Show
-                                                    Docs
-                                                    <i class="ti ti-chevron-right fs-3"></i>
-                                                </a>
-                                            </div>
+                        </div>
+                        <!-- premium docs tab items -->
+                        <div class="tab-pane" id="premium" role="tabpanel">
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <span class="border rounded-3 p-3 text-white d-inline-block">
+                                                <img src="./styles/dist/images/next-cat-icon.svg" alt="nextjs">
+                                            </span>
+                                            <h4 class="card-title mt-4 fs-5">NextJs Documentation</h4>
+                                            <p class="card-subtitle lh-base text-muted fs-3 mt-2 mb-3">
+                                                Full-featured Next.js admin with Tailwind & ShadCN. Pro components &
+                                                support.
+                                            </p>
+                                            <a href="https://tailwind-admin.github.io/Tailwind-admin/premium-documentation/nextjs/index.html"
+                                                target="_blank"
+                                                class="stretched-link fw-medium fs-3 d-flex align-items-center gap-1">Show
+                                                Docs
+                                                <i class="ti ti-chevron-right fs-3"></i>
+                                            </a>
                                         </div>
                                     </div>
-                                    <div class="col-md-4">
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <span class="border rounded-3 p-3 text-white d-inline-block">
-                                                    <img src="./styles/dist/images/react-cat-icon.svg" alt="react">
-                                                </span>
-                                                <h4 class="card-title mt-4 fs-5">React Documentation</h4>
-                                                <p class="card-subtitle lh-base text-muted fs-3 mt-2 mb-3">
-                                                    Advanced UI kit with Tailwind & ShadCN. More pages, features,
-                                                    support.
-                                                </p>
-                                                <a href="javascript:void(0)"
-                                                    class="stretched-link fw-medium fs-3 d-flex align-items-center gap-1 text-primary">Show
-                                                    Docs
-                                                    <i class="ti ti-chevron-right fs-3"></i>
-                                                </a>
-                                            </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <span class="border rounded-3 p-3 text-white d-inline-block">
+                                                <img src="./styles/dist/images/react-cat-icon.svg" alt="react">
+                                            </span>
+                                            <h4 class="card-title mt-4 fs-5">React Documentation</h4>
+                                            <p class="card-subtitle lh-base text-muted fs-3 mt-2 mb-3">
+                                                Advanced UI kit with Tailwind & ShadCN. More pages, features,
+                                                support.
+                                            </p>
+                                            <a href="javascript:void(0)"
+                                                class="stretched-link fw-medium fs-3 d-flex align-items-center gap-1 text-primary">Show
+                                                Docs
+                                                <i class="ti ti-chevron-right fs-3"></i>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- ============================================================== -->
-                    <!-- tabs for toggle documentation of free / premium end-->
-                    <!-- ============================================================== -->
-
-                    <!-- ============================================================== -->
-                    <!-- End Of Page Content -->
-                    <!-- ============================================================== -->
                 </div>
+                <!-- ============================================================== -->
+                <!-- tabs for toggle documentation of free / premium end-->
+                <!-- ============================================================== -->
+
+                <!-- ============================================================== -->
+                <!-- End Of Page Content -->
+                <!-- ============================================================== -->
             </div>
-            <!-- ============================================================== -->
-            <!-- End Container home  -->
-            <!-- ============================================================== -->
         </div>
+        <!-- ============================================================== -->
+        <!-- End Container home  -->
+        <!-- ============================================================== -->
     </div>
     <!-- End Page -->
     <!-- ============================================================== -->
