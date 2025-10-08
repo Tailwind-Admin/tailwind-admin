@@ -15502,7 +15502,7 @@ textarea.form-control-lg {
   position: fixed;
   left: 0;
   border-right: 1px solid #e5eaef;
-  height: calc(100vh - 80px);
+  height: calc(100vh - 10px);
   transition: all 0.2s linear;
   z-index: 9999;
   background-color: #fff;

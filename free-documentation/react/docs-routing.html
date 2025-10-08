@@ -324,6 +324,46 @@
           <h4 class="mb-4 pb-2">Routing</h4>
           <div class="mt-4 card">
             <div class="card-body">
+              <h4 className="card-title">How to setup route?</h4>
+              <h5 className="font-weight-normal text-muted mt-3">
+                (Set the path in <code>src/routes/Router.tsx</code>.)
+              </h5>
+              <pre>
+                <code class="language-js py-0 hljs javascript">
+<span class="hljs-comment">// ------------------------------------------------------------------------</span>
+<span class="hljs-comment">// File: src/routes/Router.tsx</span>
+<span class="hljs-comment">// ------------------------------------------------------------------------</span>
+
+<span class="hljs-keyword">import</span> { lazy } <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
+<span class="hljs-keyword">import</span> { Navigate, createBrowserRouter } <span class="hljs-keyword">from</span> <span class="hljs-string">'react-router'</span>;
+<span class="hljs-keyword">import</span> Loadable <span class="hljs-keyword">from</span> <span class="hljs-string">'../layouts/full/shared/loadable/Loadable'</span>;
+
+<span class="hljs-comment">/* ***Layouts*** */</span>
+<span class="hljs-keyword">const</span> FullLayout = Loadable(lazy(() =&gt; <span class="hljs-keyword">import</span>(<span class="hljs-string">'../layouts/full/FullLayout'</span>)));
+
+<span class="hljs-comment">/* ***Dashboard Pages*** */</span>
+<span class="hljs-keyword">const</span> Modern = Loadable(lazy(() =&gt; <span class="hljs-keyword">import</span>(<span class="hljs-string">'../views/dashboards/Modern'</span>)));
+<span class="hljs-comment">/* ***import rest of your Pages*** */</span>
+
+<span class="hljs-keyword">const</span> Router = [
+  {
+    path: <span class="hljs-string">'/'</span>,
+    element: &lt;FullLayout /&gt;,
+    children: [
+      { path: <span class="hljs-string">'/'</span>, exact: <span class="hljs-literal">true</span>, element: &lt;Modern /&gt; },
+      { path: <span class="hljs-string">'/dashboards/modern'</span>, exact: <span class="hljs-literal">true</span>, element: &lt;Modern /&gt; },
+      <span class="hljs-comment">/* ***import rest of your Pages*** */</span>
+    ],
+  },
+];
+
+</code>
+
+                </pre>
+            </div>
+          </div>
+          <div class="mt-4 card">
+            <div class="card-body">
               <h4 className="card-title">How to add a page to the sidebar?</h4>
               <h5 className="font-weight-normal text-muted mt-3">
                 (Set the path the same as you define it in <code>Router.tsx</code>.)
