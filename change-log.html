@@ -57,177 +57,77 @@
                 <!-- tabs for toggle documentation of free / premium -->
                 <!-- ============================================================== -->
                 <div class="d-flex flex-column gap-4">
-                    <!-- tab button / toggle -->
-                    <div class="d-flex justify-content-center">
-                        <ul class="nav nav-pills d-inline-flex justify-content-center gap-2 mx-auto border rounded-pill p-1 shadow-sm"
-                            role="tablist">
-                            <li class="nav-item">
-                                <a class="nav-link rounded-pill active" data-bs-toggle="tab" href="#free" role="tab">
-                                    <span>Free Version</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link rounded-pill" data-bs-toggle="tab" href="#premium" role="tab">
-                                    <span>Premium Version</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- tab content -->
-                    <div class="tab-content">
-                        <!-- free docs tab items -->
-                        <div class="tab-pane active" id="free" role="tabpanel">
-                            <div class="row w-100">
-                                <div class="col-md-3">
-                                    <div class="card hover-scale-120">
-                                        <div class="card-body">
-                                            <span class="border rounded-3 p-3 text-white d-inline-block">
-                                                <img src="./styles/dist/images/next-cat-icon.svg" alt="nextjs">
-                                            </span>
-                                            <h4 class="card-title mt-4 fs-5">NextJs</h4>
-                                            <p class="card-subtitle lh-base text-muted fs-3 mt-2 mb-3">
-                                                Free Current Version : 1.2.1
-                                            </p>
-                                            <a href="./free-documentation/nextjs/docs-change-log.html" target="_blank"
-                                                class="stretched-link fw-medium fs-3 d-inline-flex align-items-center gap-1 btn btn-outline-primary rounded-pill">Show
-                                                Changelog
-                                                <i class="ti ti-chevron-right fs-3"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="card hover-scale-120">
-                                        <div class="card-body">
-                                            <span class="border rounded-3 p-3 text-white d-inline-block">
-                                                <img src="./styles/dist/images/react-cat-icon.svg" alt="react">
-                                            </span>
-                                            <h4 class="card-title mt-4 fs-5">React</h4>
-                                            <p class="card-subtitle lh-base text-muted fs-3 mt-2 mb-3">
-                                                Free Current Version : 1.0.2
-                                            </p>
-                                            <a href="./free-documentation/react/docs-change-log.html" target="_blank"
-                                                class="stretched-link fw-medium fs-3 d-inline-flex align-items-center gap-1 btn btn-outline-primary rounded-pill">Show
-                                                Changelog
-                                                <i class="ti ti-chevron-right fs-3"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="card hover-scale-120">
-                                        <div class="card-body">
-                                            <span class="border rounded-3 p-3 text-white d-inline-block">
-                                                <img src="./styles/dist/images/vue-cat-icon.svg" alt="react">
-                                            </span>
-                                            <h4 class="card-title mt-4 fs-5">Vue</h4>
-                                            <p class="card-subtitle lh-base text-muted fs-3 mt-2 mb-3">
-                                                Free Current Version : 1.0.0
-                                            </p>
-                                            <a href="./free-documentation/vuejs/docs-change-log.html" target="_blank"
-                                                class="stretched-link fw-medium fs-3 d-inline-flex align-items-center gap-1 btn btn-outline-primary rounded-pill">Show
-                                                Changelog
-                                                <i class="ti ti-chevron-right fs-3"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="card hover-scale-120">
-                                        <div class="card-body">
-                                            <span class="border rounded-3 p-3 text-white d-inline-block">
-                                                <img src="./styles/dist/images/angular-cat-icon.svg" alt="react">
-                                            </span>
-                                            <h4 class="card-title mt-4 fs-5">Angular</h4>
-                                            <p class="card-subtitle lh-base text-muted fs-3 mt-2 mb-3">
-                                                Free Current Version : 1.1.0
-                                            </p>
-                                            <a href="./free-documentation/angular/docs-change-log.html" target="_blank"
-                                                class="stretched-link fw-medium fs-3 d-inline-flex align-items-center gap-1 btn btn-outline-primary rounded-pill">Show
-                                                Changelog
-                                                <i class="ti ti-chevron-right fs-3"></i>
-                                            </a>
-                                        </div>
-                                    </div>
+                    <!-- Change Log Cards -->
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="card hover-scale-120 w-100">
+                                <div class="card-body">
+                                    <span class="border rounded-3 p-3 text-white d-inline-block">
+                                        <img src="./styles/dist/images/next-cat-icon.svg" alt="nextjs">
+                                    </span>
+                                    <h4 class="card-title mt-4 fs-5">NextJs</h4>
+                                    <p class="card-subtitle lh-base text-muted fs-3 mt-2 mb-3">
+                                        Current Version : 1.2.1
+                                    </p>
+                                    <a href="./premium-documentation/nextjs/docs-change-log.html" target="_blank"
+                                        class="stretched-link fw-medium fs-3 d-inline-flex align-items-center gap-1 btn btn-outline-primary rounded-pill">Show
+                                        Changelog
+                                        <i class="ti ti-chevron-right fs-3"></i>
+                                    </a>
                                 </div>
                             </div>
                         </div>
-                        <!-- premium docs tab items -->
-                        <div class="tab-pane" id="premium" role="tabpanel">
-                            <div class="row w-100">
-                                <div class="col-md-3">
-                                    <div class="card hover-scale-120">
-                                        <div class="card-body">
-                                            <span class="border rounded-3 p-3 text-white d-inline-block">
-                                                <img src="./styles/dist/images/next-cat-icon.svg" alt="nextjs">
-                                            </span>
-                                            <h4 class="card-title mt-4 fs-5">NextJs</h4>
-                                            <p class="card-subtitle lh-base text-muted fs-3 mt-2 mb-3">
-                                                Premium Current Version : 1.2.1
-                                            </p>
-                                            <a href="./premium-documentation/nextjs/docs-change-log.html"
-                                                target="_blank"
-                                                class="stretched-link fw-medium fs-3 d-inline-flex align-items-center gap-1 btn btn-outline-primary rounded-pill">Show
-                                                Changelog
-                                                <i class="ti ti-chevron-right fs-3"></i>
-                                            </a>
-                                        </div>
-                                    </div>
+                        <div class="col-md-3">
+                            <div class="card hover-scale-120 w-100">
+                                <div class="card-body">
+                                    <span class="border rounded-3 p-3 text-white d-inline-block">
+                                        <img src="./styles/dist/images/react-cat-icon.svg" alt="react">
+                                    </span>
+                                    <h4 class="card-title mt-4 fs-5">React</h4>
+                                    <p class="card-subtitle lh-base text-muted fs-3 mt-2 mb-3">
+                                        Current Version : 1.0.3
+                                    </p>
+                                    <a href="./premium-documentation/react/docs-change-log.html" target="_blank"
+                                        class="stretched-link fw-medium fs-3 d-inline-flex align-items-center gap-1 btn btn-outline-primary rounded-pill">Show
+                                        Changelog
+                                        <i class="ti ti-chevron-right fs-3"></i>
+                                    </a>
                                 </div>
-                                <div class="col-md-3">
-                                    <div class="card hover-scale-120">
-                                        <div class="card-body">
-                                            <span class="border rounded-3 p-3 text-white d-inline-block">
-                                                <img src="./styles/dist/images/react-cat-icon.svg" alt="react">
-                                            </span>
-                                            <h4 class="card-title mt-4 fs-5">React</h4>
-                                            <p class="card-subtitle lh-base text-muted fs-3 mt-2 mb-3">
-                                                Premium Current Version : 1.0.2
-                                            </p>
-                                            <a href="./premium-documentation/react/docs-change-log.html" target="_blank"
-                                                class="stretched-link fw-medium fs-3 d-inline-flex align-items-center gap-1 btn btn-outline-primary rounded-pill">Show
-                                                Changelog
-                                                <i class="ti ti-chevron-right fs-3"></i>
-                                            </a>
-                                        </div>
-                                    </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card hover-scale-120 w-100">
+                                <div class="card-body">
+                                    <span class="border rounded-3 p-3 text-white d-inline-block">
+                                        <img src="./styles/dist/images/vue-cat-icon.svg" alt="react">
+                                    </span>
+                                    <h4 class="card-title mt-4 fs-5">Vue</h4>
+                                    <p class="card-subtitle lh-base text-muted fs-3 mt-2 mb-3">
+                                        Current Version : 1.0.0
+                                    </p>
+                                    <a href="./premium-documentation/vuejs/docs-change-log.html" target="_blank"
+                                        class="stretched-link fw-medium fs-3 d-inline-flex align-items-center gap-1 btn btn-outline-primary rounded-pill">Show
+                                        Changelog
+                                        <i class="ti ti-chevron-right fs-3"></i>
+                                    </a>
                                 </div>
-                                <div class="col-md-3">
-                                    <div class="card hover-scale-120">
-                                        <div class="card-body">
-                                            <span class="border rounded-3 p-3 text-white d-inline-block">
-                                                <img src="./styles/dist/images/vue-cat-icon.svg" alt="react">
-                                            </span>
-                                            <h4 class="card-title mt-4 fs-5">Vue</h4>
-                                            <p class="card-subtitle lh-base text-muted fs-3 mt-2 mb-3">
-                                                Premium Current Version : 1.0.0
-                                            </p>
-                                            <a href="./premium-documentation/vuejs/docs-change-log.html" target="_blank"
-                                                class="stretched-link fw-medium fs-3 d-inline-flex align-items-center gap-1 btn btn-outline-primary rounded-pill">Show
-                                                Changelog
-                                                <i class="ti ti-chevron-right fs-3"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="card hover-scale-120">
-                                        <div class="card-body">
-                                            <span class="border rounded-3 p-3 text-white d-inline-block">
-                                                <img src="./styles/dist/images/angular-cat-icon.svg" alt="react">
-                                            </span>
-                                            <h4 class="card-title mt-4 fs-5">Angular</h4>
-                                            <p class="card-subtitle lh-base text-muted fs-3 mt-2 mb-3">
-                                                Premium Current Version : 1.1.0
-                                            </p>
-                                            <a href="./premium-documentation/angular/docs-change-log.html"
-                                                target="_blank"
-                                                class="stretched-link fw-medium fs-3 d-inline-flex align-items-center gap-1 btn btn-outline-primary rounded-pill">Show
-                                                Changelog
-                                                <i class="ti ti-chevron-right fs-3"></i>
-                                            </a>
-                                        </div>
-                                    </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card hover-scale-120 w-100">
+                                <div class="card-body">
+                                    <span class="border rounded-3 p-3 text-white d-inline-block">
+                                        <img src="./styles/dist/images/angular-cat-icon.svg" alt="react">
+                                    </span>
+                                    <h4 class="card-title mt-4 fs-5">Angular</h4>
+                                    <p class="card-subtitle lh-base text-muted fs-3 mt-2 mb-3">
+                                        Current Version : 1.1.0
+                                    </p>
+                                    <a href="./premium-documentation/angular/docs-change-log.html" target="_blank"
+                                        class="stretched-link fw-medium fs-3 d-inline-flex align-items-center gap-1 btn btn-outline-primary rounded-pill">Show
+                                        Changelog
+                                        <i class="ti ti-chevron-right fs-3"></i>
+                                    </a>
                                 </div>
                             </div>
                         </div>
