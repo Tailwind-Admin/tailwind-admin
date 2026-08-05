@@ -337,11 +337,11 @@
   <code class="language-js py-0">
 import { Component } from &#x27;@angular/core&#x27;; import { CoreService } from &#x27;src/app/services/core.service&#x27;; @Component({ selector: &#x27;app-branding&#x27;, imports: [], template: &#x60;
 &#x3C;a href=&#x22;/&#x22; class=&#x22;logodark&#x22;&#x3E;
-    &#x3C;img src=&#x22;./assets/images/logos/dark-logo.svg&#x22; class=&#x22;align-middle m-2&#x22; alt=&#x22;logo&#x22; /&#x3E;
+    &#x3C;img src=&#x22;./assets/images/logos/dark-logo.svg&#x22; class=&#x22;align-middle m-2 rtl:-scale-x-100&#x22; alt=&#x22;logo&#x22; /&#x3E;
 &#x3C;/a&#x3E;
 
 &#x3C;a href=&#x22;/&#x22; class=&#x22;logolight&#x22;&#x3E;
-    &#x3C;img src=&#x22;./assets/images/logos/light-logo.svg&#x22; class=&#x22;align-middle m-2&#x22; alt=&#x22;logo&#x22; /&#x3E;
+    &#x3C;img src=&#x22;./assets/images/logos/light-logo.svg&#x22; class=&#x22;align-middle m-2 rtl:-scale-x-100&#x22; alt=&#x22;logo&#x22; /&#x3E;
 &#x3C;/a&#x3E;
 &#x60;, }) export class BrandingComponent { options = this.settings.getOptions(); constructor(private settings: CoreService) {} }
   </code>
