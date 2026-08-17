@@ -40,7 +40,7 @@
     <!-- ============================================================== -->
     <!--Desktop view sidebar menu-->
     <aside class="left-sidebar pt-4 d-lg-block d-none" id="navbar-example3" data-simplebar>
-      <!-- Sidebar scroll-->
+      <!-- Sidebar scroll-->  
       <div class="scroll-sidebar">
         <!-- Sidebar navigation-->
         <nav class="sidebar-nav">
@@ -338,28 +338,33 @@
 // File: src/router/MainRoutes.ts
 // ----------------------------------------------------
 
-const MainRoutes = {
-   path: '/',
-  component: () => import('@/layouts/full/FullLayout.vue'),
-  children: [
-        {
-            name: 'Modern',
-            path: '/',
-            component: () => import('@/views/dashboards/Modern.vue')
+const MainRoutes = [
+    {
+        path: '/',
+        meta: {
+            requiresAuth: true
         },
-        {
-            name: 'eCommerce',
-            path: '/dashboards/eCommerce',
-            component: () => import('@/views/dashboards/Ecommerce.vue')
-        },
-        {
-            name: 'General',
-            path: '/dashboards/general',
-            component: () => import('@/views/dashboards/General.vue')
-        },
-          /* ***import rest of your Pages*** */
-  ]
-}
+        component: () => import('../layouts/full/FullLayout.vue'),
+        children: [
+            {
+                path: '', // root `/`
+                name: 'Modern',
+                component: () => import('../views/dashboards/Modern.vue'),
+            },
+            {
+                path: 'dashboards/eCommerce',
+                name: 'ECommerce',
+                component: () => import('../views/dashboards/Ecommerce.vue'),
+            },
+            {
+                path: '/dashboards/general',
+                name: 'General',
+                component: () => import('../views/dashboards/General.vue'),
+            },
+            /* ***import rest of your Pages*** */
+        ]
+    }
+]
                     </code>
                 </pre>
             </div>
@@ -370,7 +375,7 @@ const MainRoutes = {
               <pre>
                 <code class="language-js py-0 hljs javascript">
 <span class="hljs-comment">// ------------------------------------------------------------------------</span>
-<span class="hljs-comment">// File: /src/layouts/full/vertical-sidebar/sidebarItem.ts</span>
+<span class="hljs-comment">// File: /src/layouts/full/vertical-sidebar/sidebarItems.ts</span>
 <span class="hljs-comment">// ------------------------------------------------------------------------</span>
                         
 

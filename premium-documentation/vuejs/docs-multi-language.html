@@ -340,7 +340,7 @@
                     <!-- ============================================================== -->
                     <!-- Start Page Content -->
                     <!-- ============================================================== -->
-                    <h4 class="mb-4 pb-2">Multi Language</h3>
+                    <h4 class="mb-4 pb-2">Multi Language</h4>
                         <div class="mt-4 card">
                             <div class="card-body">
                                 <h4 class="card-title">1. Add content</h4>
@@ -403,19 +403,19 @@
                                     
 <code class="language-js py-0">
 // ----------------------------------------------------
-// File: src/components/layout/full/vertical-header/languageDD.vue
-// ---------------------------------------------------- 
+// File: src/layouts/full/vertical-header/LanguageDD.vue
+// ----------------------------------------------------
 
 &#x3C;script setup lang=&#x22;ts&#x22;&#x3E;
 import {  computed } from &#x22;vue&#x22;;
-import { languageDD } from &#x22;@/_mockApis/headerData&#x22;;
+import { useI18n } from &#x22;vue-i18n&#x22;;
 import {
   DropdownMenu,
+  DropdownMenuTrigger,
   DropdownMenuContent,
   DropdownMenuItem,
-  DropdownMenuTrigger,
-} from &#x22;@/components/shadcn/ui/dropdown-menu&#x22;;
-import { useI18n } from &#x22;vue-i18n&#x22;;
+} from &#x22;@/components/ui/dropdown-menu&#x22;;
+import { languageDD } from &#x22;@/_mockApis/headerData&#x22;;
 
 const { locale } = useI18n();
 

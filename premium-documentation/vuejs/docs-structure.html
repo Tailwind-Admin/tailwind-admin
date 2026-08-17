@@ -333,8 +333,8 @@
               <code class="language-plaintext">
 📦
 ├── 📂 docs                            > Documentation for the Theme
-├── 📂 figma-file                      > Figma design files and assets
-├── 📂 package
+├── 📂 figma                           > Figma design files and assets
+├── 📂 packages
 │   ├── 📂 main                        > Primary working demo (fully updated)
 │   │   ├── 📂 public                  > Static assets served publicly (images, scripts, etc.)
 │   │   │   ├── 📄 favicon.svg         > Browser favicon
@@ -344,30 +344,32 @@
 │   │   │   ├── 📂 components          > Reusable Vue components
 |   |   |   |   ├──📂 AnimatedComponent> Common animated components
 |   |   |   |   ├──📂 apps             > Application-related components
-|   |   |   |   ├──📂 charts           > Chart pages for data visualization  
+|   |   |   |   ├──📂 charts           > Chart pages for data visualization
 │   │   │   │   ├── 📂 dashboards      > All dashboard components
 │   │   │   │   ├── 📂 editors         > Tip-Tap Editor Component
 │   │   │   │   ├── 📂 form-components > UI Related Component like chechbox , buttons etc.
 │   │   │   │   ├── 📂 forms           > All form components
 │   │   │   │   ├── 📂 frontend-pages  > All frontend-page components
 │   │   │   │   ├── 📂 pages           > All page components
+│   │   │   │   ├── 📂 shadcn-charts   > Shadcn chart components
 │   │   │   │   ├── 📂 shared          > Common components used across the theme
-│   │   │   │   ├── 📂 tables          > Table-related pages  
+│   │   │   │   ├── 📂 tables          > Table-related pages
 │   │   │   │   ├── 📂 ui              > Default Shadcn components used across the theme
 │   │   │   │   ├── 📂 ui-components   > All UI components
 │   │   │   │   ├── 📂 uiblocks-page   > Widget , Cards , Charts  components
-│   │   │   ├── 📂 css                 > stylesheets for theme styling 
+│   │   │   ├── 📂 css                 > stylesheets for theme styling
 │   │   │   ├── 📂 layouts             > Page layouts
 │   │   │   │   ├── 📂 blank           > Blank layout
 │   │   │   │   ├── 📂 full            > Full layout
 │   │   │   ├── 📂 lib                 > Utility libraries or helper logic
 │   │   │   ├── 📂 router              > Vue Router setup
-│   │   │   ├── 📂 store               > Vuex/Pinia store
+│   │   │   ├── 📂 stores              > Pinia store
 │   │   │   │   ├── 📄 customizer.ts   > UI customization store
+│   │   │   │   ├── 📄 auth.ts         > Auth store
 │   │   │   ├── 📂 types               > TypeScript type definitions
 │   │   │   ├── 📂 utils               > Utility functions
 │   │   │   │   ├── 📂 helpers         > Helper functions
-│   │   │   │   ├── 📂 locals          > Localization files
+│   │   │   │   ├── 📂 locales         > Localization files
 │   │   │   │   ├── 📄 axios.ts        > Axios setup for API calls
 │   │   │   ├── 📂 views                > Page-view components
 │   │   │   ├── 📄 App.vue              > Root Vue component
@@ -379,16 +381,18 @@
 │   │   ├── 📄 index.html               > Main HTML file
 │   │   ├── 📄 package-lock.json        > npm package lock file
 │   │   ├── 📄 package.json             > npm package manifest
-│   │   ├── 📄 postcss.config.js        > PostCSS configuration
+│   │   ├── 📄 postcss.config.mjs       > PostCSS configuration
 │   │   ├── 📄 tsconfig.json            > TypeScript compiler config
 │   │   ├── 📄 tsconfig.node.json       > TypeScript config for Node.js environment
 │   │   ├── 📄 vite.config.ts           > Vite bundler config file
+│   ├── 📂 auth                      > Demo showcasing authentication pages
 │   ├── 📂 dark                      > Demo showcasing dark mode theme
 │   ├── 📂 horizontal                > Demo with horizontal navigation layout
+│   ├── 📂 minisidebar               > Demo with mini/collapsed sidebar layout
 │   ├── 📂 rtl                       > Demo for right-to-left language support
-│   └── 📂 starterkit                > Minimal starter project for quick setup
-├── 📄 README.md                
-                              </code>
+│   └── 📂 staterkit                 > Minimal starter project for quick setup
+├── 📄 README.md
+</code>
             </pre>
           </div>
         </div>
